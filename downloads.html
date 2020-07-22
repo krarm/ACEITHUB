@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Downloads</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="downloads.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-social.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <!--Header-->
+        <header id="header">
+            <a href="index.html" class="logo"><strong>AceItHub</strong></a>
+            <nav>
+                <a href="#menu" onclick="showMenu()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-menu-button" id="menu-button" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h8A1.5 1.5 0 0 1 11 1.5v2A1.5 1.5 0 0 1 9.5 5h-8A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-8zM14 7H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM2 6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M15 11H1v-1h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M7.823 2.823l-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0z"/>
+                  </svg></a>
+            </nav>
+        </header>
+
+
+        <!--Banner-->
+        <section id="banner">
+            <div class="inner">
+                <h1>Welcome</h1>
+                <button id="continue-button" type="button" class="btn btn-secondary">Continue</button>
+            </div>
+        </section>
+
+
+        <!--Nav/Menu-->
+        <nav id="menu">
+            <ul class="menu-links">
+                <li><a id="hide-button" href="#" onclick="hideMenu()"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-bar-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H6.5A.5.5 0 0 1 6 8zm-2.5 6a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 1 0v11a.5.5 0 0 1-.5.5z"/>
+                  </svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        <!--Download Form-->
+        <div id="main-container">
+            <div id="form-container">
+                <form>
+                    <label class="my-1 mr-2" for="subject-selection">Subject</label>
+                    <select class="custom-select my-1 mr-sm-2" id="subject-selection">
+                        <option selected>Choose...</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Mathematics">Mathematics</option>
+                    </select>
+
+                    <div id="checkbox-container">
+                        
+                        <div id="year-container">
+                            <label class="my-1 mr-2" for="year-selection">Year</label>
+                            <div id="year-selection">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2020">
+                                    <label class="form-check-label" for="2020">2020</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2019</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2018</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2017</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2016</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2015</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2014</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2013</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2019">
+                                    <label class="form-check-label" for="2019">2012</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div id="paper-container">
+                            <label class="my-1 mr-2" for="paper-selection">Paper</label>
+                            <div id="paper-selection">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="p1">
+                                    <label class="form-check-label" for="p1">Paper 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="p2">
+                                    <label class="form-check-label" for="p2">Paper 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="p3">
+                                    <label class="form-check-label" for="p3">Paper 3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="p4">
+                                    <label class="form-check-label" for="p4">Paper 4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="p5">
+                                    <label class="form-check-label" for="p5">Paper 5</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="variance-container">
+                            <label class="my-1 mr-2" for="variance-selection">Variance</label>
+                            <div id="variance-selection">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="v1">
+                                    <label class="form-check-label" for="v1">Variance 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="v2">
+                                    <label class="form-check-label" for="v2">Variance 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="v3">
+                                    <label class="form-check-label" for="v3">Variance 3</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    </form>
+                </form>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
